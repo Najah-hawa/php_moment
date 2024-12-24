@@ -1,0 +1,178 @@
+
+body {
+    font-family: Arial, sans-serif;  /*Allmän inställningar för margin och skrift font */
+    margin: 0;
+    padding: 0; 
+    background-image: url('../bilder/bakgrundsbild.jpg');  /* lägger en bakgrunds bild */
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat; 
+    position: relative;
+}
+
+body::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7); /* Dimmad effekt med 70% transparens och lägga dim effekten bakom innehåll*/
+    z-index: -1; 
+}
+header {
+    background-color: #142d35;  /* design för head */
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+}
+nav {
+    background-color: #4d5d62d6; /* design för meny */
+    overflow: hidden;
+    text-align: center;
+
+}
+nav a {
+    color: white;   /* design för text i huvud meny */
+    padding: 20px 20px;
+    text-decoration: none;
+    display: inline-block;
+
+}
+nav a:hover {
+    background-color: #142d35b9;
+}
+
+.content {  /* design för div content och dess innehåll */
+    padding: 20px;
+}
+h2 {
+    color: white;    
+    padding-top: 30px; 
+}
+h3 {
+    color: white;    
+    padding-top: 30px; 
+}
+article {
+    padding-bottom: 20px;
+    color: white;  
+}
+
+footer {  /*gemensam i alla sidor*/
+    background-color: #142d35e9;;
+    color: white;
+    text-align: center;
+    padding: 0px 0px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+
+/*design för om mig sida*/
+.profilbild {
+    text-align: center; /* lägga bilden mitten på sidan */
+}
+
+.personligbild {
+    width: 150px; /* Sätter en medelstorlek på profilbilden */
+    height: 150px; /* Sätter höjden lika stor som bredden */
+    border-radius: 50%; /* Gör bilden rund */
+    object-fit: cover; /* Ser till att bilden fyller hela området utan att förvrängas */
+    border: 2px solid #fff; /* Valfritt: Ger en vit kant runt bilden */
+}
+.profil_h2{
+    text-align: center;
+}
+.profil_text {
+    width: 80%;
+    padding-left: 10%;
+}
+ul{
+    padding-left: 0px;
+    
+}
+li{
+margin-left: 20px;
+margin-top: 20px;
+padding-bottom: 10px;
+}
+.uppgift_info{
+    padding-bottom: 40px;
+}
+
+
+/*design för om buckelist sida*/
+.bucketlist_content{
+  padding-left: 10%;
+  margin-bottom: 50px;
+  padding-bottom: 100px;
+}
+label{
+    color: #fff;
+}
+input {
+    width: 50%;
+    height: 40px;
+}
+textarea {
+    width: 50%;
+    min-height: 40px;
+}
+button {
+    min-width: 40%;
+    min-height: 40px;
+    background-color: #4d5d62d6;
+    color:#fff;
+    border-radius: 10%;
+    margin-left: 5%;
+}
+thead{
+    width: 80%;
+    height: 40px;
+}
+
+th{
+    width :100px;
+    color: #fff;
+
+}
+tr{
+    width: 100%;
+    background-color:#142d35;
+}
+td{
+     min-height: 30px;
+     height: auto;
+    background-color: #fff;
+}
+.beskrivning{
+    min-width: 240px;
+}
+.namn{
+    min-width: 130px;
+}
+.knapp {
+    text-decoration: none;
+    background-color: #4d5d62d6;
+    color:#fff;
+margin-left: 25%;
+}
+.priorite{
+    text-align: center;
+    
+}
+
+
+
+/*design för om meddelande*/ 
+.error {
+    color:red;
+    margin-top: 10px;
+}
+.message{
+    color:#fff;
+    padding-top: 20px; 
+
+}
